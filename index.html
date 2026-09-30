@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+  ==========================================================
+  PORTFOLIO WEBSITE: index.html
+  ==========================================================
+  HTML is the STRUCTURE and CONTENT of the page (headings, text, links).
+  The look (colors, spacing, fonts) lives in styles.css.
+  Both files must sit in the same folder.
+
+  TO CUSTOMIZE: edit the text between the tags, e.g.
+  <p>This text</p>. Don't delete the <tags> themselves.
+-->
+<html lang="en"> <!-- lang helps screen readers and search engines -->
+<head>
+  <meta charset="utf-8"> <!-- lets the page show special characters correctly -->
+
+  <!-- Makes the page fit phone screens. Without this, phones zoom out. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The title shows in the browser tab and in Google results -->
+  <title>Anthony DiBiagio | Marketing Portfolio</title>
+
+  <!-- The description shows under your title in search results -->
+  <meta name="description" content="Marketing student at the University of New Haven. Hult Prize on-campus winner. Portfolio and contact information.">
+
+  <!-- Connects the CSS file that styles this page -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ====================== NAVIGATION ======================
+       Links starting with # jump to the section with that id
+       (for example href="#about" jumps to id="about" below). -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">Anthony DiBiagio</a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ====================== HERO ======================
+         The first thing visitors see: your name, one sentence
+         about you, and two buttons. Keep it short. -->
+    <section class="hero">
+      <div class="container">
+        <h1>Marketing student who turns customer insight into stories that connect.</h1>
+        <p class="lead">Senior at the University of New Haven. Hult Prize on-campus winner and team leader at CVS.</p>
+        <a class="button" href="#projects">See my work</a>
+        <a class="button button-outline" href="#contact">Contact me</a>
+      </div>
+    </section>
+
+    <!-- ====================== ABOUT ======================
+         Two columns on large screens (text + photo), stacked on phones.
+         The layout is controlled by the .two-col class in the CSS. -->
+    <section id="about">
+      <div class="container two-col">
+        <div>
+          <h2>About me</h2>
+          <p>I'm a senior at the University of New Haven, graduating in May 2027 with a Bachelor of Science in Marketing. Since 2022, I've worked as an Operations Manager in the pharmacy at CVS, where I lead a team of more than six associates and use customer feedback to improve service and keep customers coming back. Balancing a leadership role with a full course load has taught me to manage my time, stay calm under pressure, and communicate clearly with people from all walks of life.</p>
+          <p>I chose marketing because I enjoy how it connects people. At its best, it helps a brand understand what someone needs and gives them a reason to trust it. That idea shows up in everything I do, from resolving a customer's concern at the pharmacy to researching a community's worries for a business pitch. I'm especially drawn to digital media, market research, brand strategy, advertising, and customer behavior.</p>
+          <p>Outside the classroom, I've won first place in both the BUSA 100 Pitch Competition and the university's Hult Prize OnCampus competition, consulted for an on-campus organization, and written for The Charger Bulletin. I'm also HubSpot certified in Inbound Marketing and Sales Software. I'm looking for a role, or an MBA program, where I can keep learning while contributing right away. In my free time I go to the cinema, read, and write, and I think those habits have made me a better storyteller.</p>
+        </div>
+
+        <!-- PHOTO SPOT: to add your headshot
+             1. Put your photo in an "images" folder next to this file, named headshot.jpg
+             2. DELETE the <div class="photo-placeholder"> line below
+             3. Remove the comment markers around the <img> line
+             The alt text describes the photo for screen readers. -->
+        <div class="photo-placeholder">Your headshot here</div>
+        <!-- <img class="photo" src="images/headshot.jpg" alt="Portrait of Anthony DiBiagio" width="400" height="400"> -->
+      </div>
+    </section>
+
+    <!-- ====================== PROJECTS ======================
+         Each project is an <article> "card". To add another project,
+         copy one whole <article>...</article> block and edit the text. -->
+    <section id="projects" class="alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Each <article> is one project card. To add a project, copy a whole
+             <article>...</article> block and edit the text. The "Tools" line is
+             optional: delete it if it doesn't apply. -->
+
+        <article class="card">
+          <h3>AegisPack: From Classroom Pitch to Regional Stage</h3>
+          <p class="meta">Hult Prize OnCampus winner (advanced to regionals)</p>
+          <p>My team of five developed a business concept for an everyday-looking backpack with a ballistic panel, aimed at students and families concerned about safety. I built the marketing plan, developed the financials, and presented to the judges. The marketing plan combined Instagram and TikTok lifestyle content, Facebook ads for parents, Google search ads, and a short-film concept. To back it up, we surveyed 100+ people, sized the market, compared competitors, and modeled five years of revenue and costs.</p>
+          <p><strong>Tools:</strong> PowerPoint, Excel</p>
+          <p><strong>What I learned:</strong> A sensitive product calls for careful messaging, and customer research should shape the tone of every message. Building the financials also taught me to test whether a marketing idea can pay for itself.</p>
+          <p><strong>Why it shows my potential:</strong> It combines creativity, research, and numbers in one project. I tested the idea with real people, planned how to reach them, and defended the plan in front of judges, which is what marketing work looks like.</p>
+          <!-- PROJECT IMAGE SPOT: replace this placeholder with
+               <img class="project-img" src="images/aegispack.jpg" alt="Description of the image"> -->
+          <div class="photo-placeholder wide">Project image or pitch slide here</div>
+        </article>
+
+        <article class="card">
+          <h3>BUSA 100 Pitch: Finding the Customer First</h3>
+          <p class="meta">First-place winner, leading to a Hult Prize nomination</p>
+          <p>I created and delivered a pitch that identified a market opportunity and built a customer-centered solution around it. I presented my recommendations using data-driven reasoning and won first place, which earned my team a nomination to the Hult Prize competition.</p>
+          <p><strong>Tools:</strong> PowerPoint</p>
+          <p><strong>What I learned:</strong> A strong idea has to be explained simply. Starting with the customer's problem made the pitch easier to follow and more persuasive.</p>
+          <p><strong>Why it shows my potential:</strong> It was my first step toward the Hult Prize, and it shows I can turn early ideas into work that earns recognition.</p>
+        </article>
+
+        <article class="card">
+          <h3>UAccountability: Boosting Student Engagement</h3>
+          <p class="meta">Student Consultant, University of New Haven</p>
+          <p>I consulted for an on-campus organization to identify ways to increase student participation. I contributed research-based recommendations and worked with a team to develop solutions.</p>
+          <!-- Optional: add a line like <p><strong>Tools:</strong> Surveys, interviews</p> -->
+          <p><strong>What I learned:</strong> Good recommendations come from listening to the people you're trying to reach, then turning what you hear into a clear plan.</p>
+          <p><strong>Why it shows my potential:</strong> It was real client work, and it gave me experience turning audience research into practical advice.</p>
+        </article>
+
+        <article class="card">
+          <h3>The Charger Bulletin: Writing for a Real Audience</h3>
+          <p class="meta">Published writer, University of New Haven</p>
+          <p>I wrote published articles for the student newspaper, researching topics, organizing information, and shaping engaging stories for a student audience on deadline.</p>
+          <p><strong>What I learned:</strong> Writing for a real audience means getting to the point, meeting deadlines, and adapting the message to the reader.</p>
+          <p><strong>Why it shows my potential:</strong> Content creation is central to modern marketing, and this work shows I can research a topic and tell its story clearly.</p>
+        </article>
+
+        <!-- Work experience stays on the site too, but as a compact card -->
+        <article class="card">
+          <h3>Operations Manager, RX at CVS Pharmacy</h3>
+          <p class="meta">2022 to present</p>
+          <p>I lead a team of 6+ associates, use customer feedback to improve service and retention, and train team members on service standards and cash-flow controls.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================== SKILLS ======================
+         Each <li> becomes a small rounded "tag". Add or delete freely. -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <h3>Marketing and research</h3>
+        <ul class="tags">
+          <li>Market research</li><li>Customer insights</li><li>Brand strategy</li><li>Digital media</li><li>Advertising</li><li>CRM</li>
+        </ul>
+        <h3>Tools and certifications</h3>
+        <ul class="tags">
+          <li>HubSpot CRM</li><li>HubSpot Inbound Marketing</li><li>HubSpot Sales Software</li><li>Adobe Creative Cloud</li><li>Excel</li><li>PowerPoint</li>
+        </ul>
+        <h3>AI in marketing</h3>
+        <p>In my AI course I learned to use AI as a fast first draft for brainstorming and research, then apply human judgment by fact-checking, editing, and fitting the message to the audience.</p>
+      </div>
+    </section>
+
+    <!-- ====================== GOALS ====================== -->
+    <section id="goals" class="alt">
+      <div class="container">
+        <h2>Career goals</h2>
+        <p>I'm keeping two paths open: an entry-level role in brand, digital media, or market research, or an MBA to build my strategy and leadership skills. Either way, I want to work where research meets creativity.</p>
+      </div>
+    </section>
+
+    <!-- ====================== CONTACT ======================
+         GitHub Pages can't process forms by itself (it only hosts static
+         files). The form below uses a free service called Formspree:
+         1. Sign up at formspree.io and create a form
+         2. Replace YOUR_FORM_ID in the action URL with your form's ID
+         Until you do that, visitors can still use the email link. -->
+    <section id="contact">
+      <div class="container two-col">
+        <div>
+          <h2>Let's talk</h2>
+          <p>I'm open to internships, entry-level roles, and conversations about marketing or MBA programs.</p>
+          <p>
+            Email: <a href="mailto:ant.dibiagio@gmail.com">ant.dibiagio@gmail.com</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/anthonymario/" rel="noopener">linkedin.com/in/anthonymario</a>
+          </p>
+        </div>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <!-- "for" on the label matches the "id" on the field, so clicking the label focuses the field -->
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Anthony DiBiagio | West Haven, CT | University of New Haven, B.S. Marketing, May 2027</p>
+    </div>
+  </footer>
+
+</body>
+</html>
